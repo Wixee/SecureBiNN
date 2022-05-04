@@ -1,0 +1,25 @@
+{
+    "ip_0": "127.0.0.1",
+    "port_0_1": 45000,
+    "port_0_2": 45001,
+    "ip_1": "127.0.0.1",
+    "port_1_0": 45002,
+    "port_1_2": 45003,
+    "ip_2": "127.0.0.1",
+    "port_2_0": 45004,
+    "port_2_1": 45005,
+    "role": 0,
+    "r": [
+        10086,
+        10010,
+        10000
+    ],
+    "model_path": "models\\Network-A.h5",
+    "dataset": "mnist",
+    "precision": 5,
+    "float_coded_dtype": "int16",
+    "batch_size": 1,
+    "repeat": 10,
+    "eval_on_entire_test_set": false,
+    "archive_path":"archive\\"
+}

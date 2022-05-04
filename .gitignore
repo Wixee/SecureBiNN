@@ -1,0 +1,9 @@
+.vscode
+**/__pycache__
+
+role_0_data_owner/*
+role_1_model_owner/*
+role_2_ttp/*
+
+archive/
+**/test_model.ipynb
