@@ -43,6 +43,8 @@ for i in range(3):
     if i != 0:
         del cur_config['dataset']
         del cur_config['archive_path']
+        if os.path.exists(new_dir_path.joinpath('archives')):
+            shutil.rmtree(new_dir_path.joinpath('archives'))
     if i != 1:
         del cur_config['model_path']
         if os.path.exists(new_dir_path.joinpath('models')):

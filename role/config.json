@@ -21,5 +21,5 @@
     "batch_size": 1,
     "repeat": 10,
     "eval_on_entire_test_set": false,
-    "archive_path":"archive\\"
+    "archive_path":"archives\\"
 }
