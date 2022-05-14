@@ -1,9 +1,12 @@
 # SecureBiNN
 
 <p align='left'>
-SecureBiNN is a novel 3-party secure computation framework1for evaluating privacy-preserving discrete 
-neural network (DiNN). In SecureBiNN, input data and 
-model parameters are separated uniformly at random among the parties who may then act upon secure computations to obtain secret shares of the prediction result without disclosing the input data, model parameters and the prediction result. SecureBiNN performs linear operations in a computation-efficient and communication-free way (by 3-party secret sharing). For non-linear operations, we provide novel methods to evaluate maxpooling layers and batch normalization8layers in DiNN and the communication cost is significantly minimized comparing to previous work like ABY3(CCS’18) and SecureNN (PETS’19). SecureBiNN10conforms to universally composable (UC) security and can be implemented by11tensorflow and pytorch. We evaluate an illustrative instance on VGG16 within 120.986 seconds (2×faster than XONN) and 1.01MB communication cost (13×less than Falcon).
+The paper proposes SecureBiNN, a novel three-party secure computation framework for evaluating privacy-preserving binarized neural network (BiNN) in semi-honest adversary setting.
+In SecureBiNN, three participants hold input data and model parameters in secret sharing form, and execute secure computations to obtain secret shares of prediction result without disclosing their input data, model parameters and the prediction result.
+SecureBiNN performs linear operations in a computation-efficient and communication-free way, and for non-linear operations, we provide novel secure methods for evaluating activation function, maxpooling layers, and batch normalization layers in BiNN.
+Communication overhead is significantly minimized comparing to previous work like XONN and Falcon.
+We implement SecureBiNN with tensorflow and the experiments show that on CIFAR-10 dataset, SecureBiNN achieves an accuracy of 81.5% within 1.301 seconds and 16.60MB communication cost with the Fitnet structure. Other concrete comparisons with state-of-the-art are presented as well.
+
 </p>
 
 ## Illustration of this project
