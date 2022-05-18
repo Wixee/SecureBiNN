@@ -1,13 +1,12 @@
 # SecureBiNN
 
-<p align='left'>
-	The paper proposes SecureBiNN, a novel three-party secure computation framework for evaluating privacy-preserving binarized neural network (BiNN) in semi-honest adversary setting.
+<p align='justify'>
+The paper proposes SecureBiNN, a novel three-party secure computation framework for evaluating privacy-preserving binarized neural network (BiNN) in semi-honest adversary setting.
 In SecureBiNN, three participants hold input data and model parameters in secret sharing form, and execute secure computations to obtain secret shares of prediction result without disclosing their input data, model parameters and the prediction result.
-SecureBiNN performs linear operations in a computation-efficient and communication-free way, and for non-linear operations, we provide novel secure methods for evaluating activation function, maxpooling layers, and batch normalization layers in BiNN.
+SecureBiNN performs linear operations in a computation-efficient and communication-free way. For non-linear operations, we provide novel secure methods for evaluating activation function, maxpooling layers, and batch normalization layers in BiNN.
 Communication overhead is significantly minimized comparing to previous work like XONN and Falcon.
-We implement SecureBiNN with tensorflow and the experiments show that on CIFAR-10 dataset, SecureBiNN achieves an accuracy of 81.5\% within 1.301 seconds and 16.60MB communication cost with the Fitnet structure.
-Other concrete comparisons with state-of-the-art are presented as well.
-
+We implement SecureBiNN with tensorflow and the experiments show that using the Fitnet structure, SecureBiNN achieves on CIFAR-10 dataset an accuracy of 81.5%, with the communication cost being 16.609MB and the runtime being 0.527s/3.447s in the LAN/WAN settings.
+More evaluations on real-world datasets are also performed and other concrete comparisons with state-of-the-art are presented as well.
 </p>
 
 ## Illustration of this project
