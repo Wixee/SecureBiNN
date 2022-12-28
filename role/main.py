@@ -5,7 +5,7 @@ from utils.datasets import load_dataset
 from utils.thread import custom_Thread
 from utils.bnnModels import *
 from utils.bnnLayers import *
-from utils.mpc import SecureDiNN
+from utils.mpc import SecureBiNN
 
 import numpy as np
 import json
@@ -204,7 +204,7 @@ if __name__ == '__main__':
         for l in range(0, n_data, n_batch):
             r = min(n_data, l + n_batch)
             data_share_batch = [data_share[0][l:r], data_share[1][l:r]]
-            ret = SecureDiNN(role, random_handler, listener, sender,
+            ret = SecureBiNN(role, random_handler, listener, sender,
                              data_share_batch, model_share)
             ret_list.append(ret)
     toc = time()

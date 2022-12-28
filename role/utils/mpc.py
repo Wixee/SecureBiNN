@@ -834,7 +834,7 @@ def get_tuple_delta(tuple_mo: np.ndarray, tuple_do: np.ndarray):
     return ret
 
 
-def SecureDiNN(role, random_handler, listener, sender, data_share,
+def SecureBiNN(role, random_handler, listener, sender, data_share,
                model_share):
     # role 0: data owner (share_0, share_1)
     # role 1: model owner (share_1, share_2)
@@ -1178,7 +1178,7 @@ def test_secure_activation(n_bit: int, n_batch: int, role: int, listener: list, 
         'output_dtype': 'int32',
         'msb': n_bit-1,
         'nxt_dtype': 'int32',
-        'deact_val':    -1
+        'deact_val': -1
     }
 
     input_dtype = cur_layer['dtype']
@@ -1297,7 +1297,7 @@ def test_secure_activation(n_bit: int, n_batch: int, role: int, listener: list, 
 
         if len_delta_tuple > 0:
             delta_tuple = np.reshape(delta[:len_delta_tuple],
-                                    (-1, n_tuple, *ret.shape))
+                                     (-1, n_tuple, *ret.shape))
             tuple[3] = delta_tuple[0]
             tuple[4] = delta_tuple[1]
             tuple[5] = delta_tuple[2]
@@ -1309,7 +1309,7 @@ def test_secure_activation(n_bit: int, n_batch: int, role: int, listener: list, 
 
         if len_delta_triple > 0:
             delta_triple = np.reshape(delta[len_delta_tuple:],
-                                    triple[2].shape)
+                                      triple[2].shape)
             triple[2] = delta_triple
 
         a_share = np.zeros_like(ret)
