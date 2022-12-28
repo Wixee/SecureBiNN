@@ -7,7 +7,7 @@ from utils.npTcp import npTcpReceiver, npTcpSender
 from utils.thread import custom_Thread
 from utils.bnnModels import *
 from utils.bnnLayers import *
-from utils.mpc import ot_3party, extract_msb_ppa, count_ppa_n_triple, modify_triple_with_optimization, extract_msb_ppa_with_optimize, verify_triple, SecureDiNN, test_secure_activation
+from utils.mpc import ot_3party, extract_msb_ppa, count_ppa_n_triple, modify_triple_with_optimization, extract_msb_ppa_with_optimize, verify_triple, SecureBiNN, test_secure_activation
 import numpy as np
 import json
 from time import time
