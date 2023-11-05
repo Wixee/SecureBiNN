@@ -17,9 +17,13 @@ a trusted third party. The data owner seperate the data to other participants, a
 
 ## Requirments
 
-- python == 3.8
-- Tensorflow == 2.4.1
-- numpy == 1.19.0
+- python == 3.9.18
+
+Please install dependencies by running the command
+
+```dotnetcli
+pip install -r ./role/requirements.txt
+```
 
 ## How to run this project ?
 
