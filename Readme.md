@@ -17,25 +17,32 @@ a trusted third party. The data owner seperate the data to other participants, a
 
 ## Requirments
 
-- python == 3.9.18
+The repo is developed in Windows machine, so there is no guarantee that this code can run in other OS.
+Please make sure you have successfully set up and enabled [Anaconda](https://www.anaconda.com/download) before going through the following steps.
 
-Please install dependencies by running the command
+1. Setup a new python environment for this project.
 
-```dotnetcli
-pip install -r ./role/requirements.txt
-```
+   ```powershell
+   conda create -n SecureBiNN python=3.9.18
+   ```
+
+1. Install required python packages.
+
+   ```powershell
+   pip install -r ./role/requirements.txt
+   ```
 
 ## How to run this project ?
 
-First fill in the relevant settings in role/config.json according to the actual situation, including the ips and the ports of three participants. Then, run
+First fill in the relevant settings in [./role/config.json](./role/config.json) according to the actual situation, including the ips and the ports of three participants. Then, run
 
-```
+```powershell
 python make_roles.py
 ```
 
 to generate three files representing three different participants. For each participant, execute
 
-```
+```powershell
 python main.py
 ```
 
