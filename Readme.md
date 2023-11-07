@@ -54,5 +54,3 @@ python main.py
 
 to run the SecureBiNN.
 The report message will be returned to data owner.
-
-1.
