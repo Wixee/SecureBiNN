@@ -15,7 +15,7 @@ In theory, SecureBiNN supports arbitrary division of data and models among the t
 we suppose three participants are data owner, model owner and
 a trusted third party. The data owner seperate the data to other participants, and the model owner seperates the shares of the model.
 
-## Requirments
+## Requirements
 
 The repo is developed in Windows machine, so there is no guarantee that this code can run in other OS.
 Please make sure you have successfully set up and enabled [Anaconda](https://www.anaconda.com/download) before going through the following steps.
