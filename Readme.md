@@ -23,7 +23,13 @@ Please make sure you have successfully set up and enabled [Anaconda](https://www
 1. Setup a new python environment for this project.
 
    ```powershell
-   conda create -n SecureBiNN python=3.9.18
+   conda create -n securebinn python=3.9.18
+   ```
+
+1. Enable the environment.
+
+   ```powershell
+   conda activate securebinn
    ```
 
 1. Install required python packages.
@@ -48,3 +54,5 @@ python main.py
 
 to run the SecureBiNN.
 The report message will be returned to data owner.
+
+1.
